@@ -2,7 +2,7 @@
 #include "serializable.h"
 #include "comparable.h"
 
-class Person : public Serializable, public Comparable
+class Person : public Comparable, public Serializable
 {
 private:
 	unsigned char age;
