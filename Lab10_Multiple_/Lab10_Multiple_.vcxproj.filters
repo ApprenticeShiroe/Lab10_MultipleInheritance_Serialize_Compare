@@ -26,9 +26,6 @@
     <ClInclude Include="serializable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="comparable.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Person.h">
       <Filter>Header Files</Filter>
     </ClInclude>

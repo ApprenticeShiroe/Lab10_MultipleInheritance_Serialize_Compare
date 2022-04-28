@@ -78,6 +78,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\shiro\source\repos\ApprenticeShiroe\Lab10_MultipleInheritance_Serialize_Compare\SorterLib;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -116,10 +117,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\shiro\source\repos\ApprenticeShiroe\Lab10_MultipleInheritance_Serialize_Compare\SorterLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SorterLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\shiro\source\repos\ApprenticeShiroe\Lab10_MultipleInheritance_Serialize_Compare\Lab10_Multiple_;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -143,9 +147,13 @@
     <ClCompile Include="Person.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="comparable.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="serializable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SorterLib\SorterLib.vcxproj">
+      <Project>{13ec00b5-6ca3-42c9-8d98-c0856545cc7b}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

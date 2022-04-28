@@ -152,10 +152,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Sorter.cpp" />
     <ClCompile Include="SorterLib.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="comparable.h" />
+    <ClInclude Include="Sorter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

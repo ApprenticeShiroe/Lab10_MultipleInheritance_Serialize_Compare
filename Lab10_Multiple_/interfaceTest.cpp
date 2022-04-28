@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
-#include "person.h"
+#include "Person.h"
+#include "Sorter.h"
 
 using namespace std;
 
@@ -15,6 +16,8 @@ int main()
 	people[1] = new Person(12, 100, 50);
 	people[2] = new Person(30, 180, 85);
 	people[3] = new Person(40, 182, 90);
+
+
 
 	// Lehet, hogy a HSZK-ban módosítani kell az elérési utat, hogy legyen írási jog.
 	const char* fname = "people.dat";
